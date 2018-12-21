@@ -1,4 +1,4 @@
-pragma solidity ^0.4.20;
+pragma solidity ^0.5.2;
 
 contract ERC165Query {
     bytes4 constant InvalidID = 0xffffffff;
@@ -25,7 +25,7 @@ contract ERC165Query {
         return false;
     }
 
-    function noThrowCall(address _contract, bytes4 _interfaceId) constant internal returns (uint256 success, uint256 result) {
+    function noThrowCall(address _contract, bytes4 _interfaceId) view internal returns (uint256 success, uint256 result) {
         bytes4 erc165ID = ERC165ID;
 
         assembly {

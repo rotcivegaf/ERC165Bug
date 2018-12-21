@@ -2,9 +2,6 @@ const ERC165Query = artifacts.require('./ERC165Query.sol');
 const ERC165QueryFixed = artifacts.require('./ERC165QueryFixed.sol');
 
 const Example = artifacts.require('./Example.sol');
-const Helper = require('./Helper.js');
-
-const Web3Utils = require('web3-utils');
 
 contract('ERC165Query and ERC165QueryFixed', function (accounts) {
     let erc165Query;
